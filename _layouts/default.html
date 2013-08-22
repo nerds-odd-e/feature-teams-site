@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+				<meta name="description" content="The Feature Teams Primer contains various information to get you started.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+			<div class="container"> 
+				<div id="header">
+					<h1>{{ page.title }}</h1>
+				</div>
+        <div class="section_container">
+          <div class="section">
+	          <div class="section_title">
+		          <h2>{{ page.what.title }}</h2>  
+	          </div>
+	          <div class="section_content">
+   	          <p>
+			          {{ page.what.content }}
+              </p>
+	          </div>
+          </div>
+          <div class="section">
+	          <div class="section_title">
+	      	    <h2>{{ page.where.title }}</h2>  
+	          </div>
+	          <div class="section_content">
+ 	            <p>
+			          {{ page.where.content }}
+              </p>
+	          </div>
+          </div>
+          <div class="section">
+	          <div class="section_title">
+	      	    <h2>{{ page.learn.title }}</h2>  
+	          </div>
+	          <div class="section_content">
+ 	            <p>
+			          {{ page.learn.content }}
+              </p>
+							<ul>
+								{% for link in page.learn.links %}
+								<li>
+									<a href="{{ link.link }}">{{ link.title }}</a> 
+									{% if link.title2 %}
+									<a href="{{ link.link2 }}">{{ link.title2 }}</a>
+									{% endif %}
+									{{ link.extra }} 
+									{% if link.extra_title %} 
+									<a href="{{ link.extra_link }}">
+										{{ link.extra_title }}
+									</a>
+									{% endif %}
+								</li>	
+								{% endfor %}
+							</ul>
+	          </div>
+          </div>
+        </div>
+			</div>
+    </body>
+</html>

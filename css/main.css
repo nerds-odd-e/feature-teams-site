@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+body {
+ font-family: 'Cabin', sans-serif;
+ text-rendering: optimizeLegibility;
+ background-color: rgb(255, 204, 153); //#ccc;
+ text-align: center;
+ padding: 0;
+ margin: 0;
+}
+
+a {
+	color: #4159d7;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+}
+
+#header {
+	padding: 1em;
+	border-bottom: solid 1px rgb(235, 184, 133);
+}
+
+
+#header h1 {
+	font-size: 3em;
+	margin: 0 1em;
+	color: #99001a;
+	text-align: left;
+	text-shadow: 0 0 1px rgb(250,250,250);
+}
+
+.section_container {
+	border-top: solid 1px rgb(255, 224, 173);
+}
+
+.section {
+	margin: 1em 2em 1em 1em;
+	padding: 0;
+	text-align: left;
+  text-shadow: 0 0 1px rgb(255,255,255,0.7);
+}
+
+.section_title {
+	display: inline-block;
+	width: 15%;
+	vertical-align: top;
+	text-align: center;
+	text-transform: lowercase;
+	border: solid 2px #99001a;
+	border-radius: 10px;
+}
+
+.section_title h2 {
+	font-size: 1.1em;
+	color: #99001a;
+}
+
+.section_content {
+	display: inline-block;
+	width: 80%;
+	padding-left: 1em;
+	margin-bottom: 2em;
+}
+
+.section_content p {
+	margin-top: 0;
+}
+
