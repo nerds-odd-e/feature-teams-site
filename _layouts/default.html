@@ -45,22 +45,28 @@
 							<ul>
 								{% for link in page.learn.links %}
 								<li>
-									<a href="{{ link.link }}">{{ link.title }}</a> 
-									{% if link.title2 %}
-									<a href="{{ link.link2 }}">{{ link.title2 }}</a>
-									{% endif %}
-									{{ link.extra }} 
-									{% if link.extra_title %} 
-									<a href="{{ link.extra_link }}">
-										{{ link.extra_title }}
-									</a>
-									{% endif %}
+									{{ link.link }}
+								</li>	
+								{% endfor %}
+							</ul>
+							<p>
+                {{ page.learn.content2 }}
+							</p>
+              <ul>
+								{% for link in page.learn.links2 %}
+								<li>
+										{{ link.link }}
 								</li>	
 								{% endfor %}
 							</ul>
 	          </div>
           </div>
         </div>
+				<div id="footer">
+					<p>
+						{{ page.footer }}
+					</p>
+				</div>
 			</div>
     </body>
 </html>
