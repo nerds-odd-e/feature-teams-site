@@ -18,6 +18,20 @@ a:hover {
 	text-decoration: underline;
 }
 
+#translation_container {
+	font-size: 0.8em;
+	margin: 1em 5em;
+}
+
+#translation {
+  border: solid 1px #4159d7;
+	border-radius: 10px;
+  padding: 5px;
+	width: 50px;
+	float: right;
+	text-align: center;
+}
+
 #header {
 	padding: 1em;
 	border-bottom: solid 1px rgb(235, 184, 133);
@@ -25,10 +39,10 @@ a:hover {
 
 #header h1 {
 	font-size: 3em;
-	margin: 0 1em;
+	margin: 20px 1em 0 1em;
 	color: #99001a;
 	text-align: left;
-	text-shadow: 0 0 4px rgb(250,250,250);
+	text-shadow: 0 0 3px rgb(250,250,250);
 }
 
 .section_container {
@@ -65,13 +79,40 @@ a:hover {
 	margin-bottom: 1em;
 }
 
+@media (max-width: 540px) {
+	#header h1 {
+		text-align: center;
+	}
+
+  .section {
+		margin: 1em;
+	}
+
+  .section_title, .section_content {
+		display: block;
+		margin: 1em;
+	}
+
+	.section_content {
+		padding: 0;
+		width: auto;
+	}
+
+	.section_title {
+		width: 115px;
+		text-align: center;
+		margin: 1em auto;
+	}
+
+}
+
 .section_content p {
 	margin-top: 0;
 }
 
 #footer {
 	font-size: 0.8em;
-	margin: 3em auto;
+	margin: 3em 2em;
 }
 
 #online_version {
@@ -95,6 +136,8 @@ iframe {
   -webkit-border-radius: 10px; 
   border-radius: 10px; 
   box-shadow: 1px 1px 5px #555; 
+	width: 90%;
+	height: 1200px;
 }
 
 
