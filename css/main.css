@@ -79,33 +79,6 @@ a:hover {
 	margin-bottom: 1em;
 }
 
-@media (max-width: 540px) {
-	#header h1 {
-		text-align: center;
-	}
-
-  .section {
-		margin: 1em;
-	}
-
-  .section_title, .section_content {
-		display: block;
-		margin: 1em;
-	}
-
-	.section_content {
-		padding: 0;
-		width: auto;
-	}
-
-	.section_title {
-		width: 115px;
-		text-align: center;
-		margin: 1em auto;
-	}
-
-}
-
 .section_content p {
 	margin-top: 0;
 }
@@ -139,5 +112,48 @@ iframe {
 	width: 90%;
 	height: 1200px;
 }
+
+@media (max-width: 540px) {
+	#header h1 {
+		text-align: center;
+	}
+
+  .section {
+		margin: 1em;
+	}
+
+  .section_title, .section_content {
+		display: block;
+		margin: 1em;
+	}
+
+	.section_content {
+		padding: 0;
+		width: auto;
+	}
+
+	.section_title {
+		width: 115px;
+		text-align: center;
+		margin: 1em auto;
+	}
+
+	iframe {
+		height: 620px; 
+	}
+}
+
+@media (max-width: 767px) {
+  iframe {
+		height: 880px;
+}
+
+@media (max-width: 480px) {
+  iframe {
+		height: 551px;
+	}
+}
+
+
 
 
