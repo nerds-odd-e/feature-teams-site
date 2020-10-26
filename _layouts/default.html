@@ -11,8 +11,11 @@
     <body>
 			<div class="container"> 
 				<div id="translation_container">
-					<div id="translation">
-						{{ page.translation }}
+						{% for translation in page.translations %}
+						<div class="translation">
+							{{ translation.translation }}
+						</div>
+						{% endfor %}
 					</div>
 				</div>
 				<div id="header">
