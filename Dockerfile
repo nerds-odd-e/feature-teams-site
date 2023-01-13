@@ -1,2 +1,5 @@
-FROM nginx
-COPY . /usr/share/nginx/html
+FROM sesteva/nginx-jekyll-blog
+
+RUN \
+    jekyll build && \
+    mv _site /srv/www
